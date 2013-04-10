@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rezept id= "0">
+   	<rezeptname>Lenchen`Schokoladenkuchen</rezeptname>
+    <galerie>
+    		<bild id= "0">
+    		<bezeichnung>Bild:Chocokuchen</bezeichnung>
+    		<url>chocokuchen.jpg</url>
+    		</bild>		
+    </galerie>   
+    <zutaten>
+             <zutat>
+             		<name>Butter</name>   
+             		<menge>200</menge>
+             		<einheit>g</einheit>
+             </zutat>  
+             <zutat>
+             		<name>Zucker</name>   
+             		<menge>200</menge>
+             		<einheit>g</einheit>
+             </zutat>
+             <zutat>      		
+             		<name>Schokolade</name>
+             		<link idref="/rezept-zutateninfo-com.php?ID=1618"> Schokolade,Blockschokolade</link>             		
+             		<menge>200</menge>
+             		<einheit>g</einheit>
+             </zutat>
+             <zutat>
+             		<name>Mehl</name>   
+             		<menge>120</menge>
+             		<einheit>g</einheit>
+             </zutat>
+             <zutat>
+             		<name>Backpulver</name>   
+             		<menge>1/2</menge>
+             		<einheit>TL</einheit>
+             </zutat>
+             <zutat>
+                    <name>Vanillezucker</name>   
+             		<menge>1</menge>
+             		<einheit>Pkt.</einheit>
+             </zutat>
+             <zutat>
+             		<name>Ei(er)</name>
+            	    <link idref="/rezept-zutateninfo-com.php?ID=36"> Ei(er)</link>   
+             		<menge>4</menge>
+             		<einheit></einheit>
+             </zutat>      
+             
+    </zutaten>
+    <zubereitung>
+    		<arbeitszeit>
+    				<stunde>1</stunde>
+    				<minuten></minuten>
+    		</arbeitszeit>
+    		<schwierigkeitsgrad>normal</schwierigkeitsgrad>
+    		<kalorien>295</kalorien>
+    		<portion>16</portion>
+    		<beschreibung>
+    			Butter und Schokolade im Wasserbad schmelzen. Eier trennen.
+    			Eiweiß steif schlagen. Eigelbe, Zucker und Vanillezucker verrühren. 
+    			Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+    			Mehl mit dem Backpulver in die Masse sieben und zum Schluss die 
+    			steifen Eiweiße vorsichtig unterheben. In eine gut gefettete Form geben.
+    			Bei 180°Grad 40 – 50 Minuten backen. 
+    		</beschreibung>	
+   </zubereitung>    
+   <kommentare>
+   			<kommentar id = "0">
+   			<user>swieselchen</user>
+   			<date>2002-07-02</date>
+   			<text>
+   			    Habe Deinen Kuchen gestern gebacken (kleine Abwandlung: 
+   			    statt Blockschokolade hatte ich nur Kuvertüre, zartbitter und 
+   			    ich habe noch etwas Rumaroma und eine Prise Salz dazugegeben) 
+   			    mein LAG war total begeistert. Ich übrigends auch, super Rezept
+   			</text>
+   			</kommentar>
+   </kommentare>
+   
+</rezept>
