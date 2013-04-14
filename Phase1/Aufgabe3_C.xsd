@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<xsd:schema attributeFormDefault="unqualified" 
+            elementFormDefault="qualified" version="1.0" 
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="rezepte" type="rezepteType" />
+  <xsd:complexType name="rezepteType">
+    <xsd:sequence>
+      <xsd:element name="rezept" type="rezeptType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="rezeptType">
+    <xsd:sequence>
+      <xsd:element name="rezeptname" type="xsd:string" />
+      <xsd:element name="zutaten" type="zutatenType" />
+      <xsd:element name="zubereitung" type="zubereitungType" />
+      <xsd:element name="kommentare" type="kommentareType" />
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:int" />
+  </xsd:complexType>
+  <xsd:complexType name="kommentareType">
+    <xsd:sequence>
+      <xsd:element name="user" type="xsd:string" />
+      <xsd:element name="datum" type="xsd:date" />
+      <xsd:element name="text" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="zubereitungType">
+    <xsd:sequence>
+      <xsd:element name="arbeitszeit" type="arbeitszeitType" />
+      <xsd:element name="schwierigkeitsgrad" type="xsd:string" />
+      <xsd:element name="kalorien" type="xsd:int" />
+      <xsd:element name="portion" type="xsd:int" />
+      <xsd:element name="beschreibung" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="arbeitszeitType">
+    <xsd:sequence>
+      <xsd:element name="stunde" type="xsd:int" />
+      <xsd:element name="minuten" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="zutatenType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="zutat" type="zutatType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="zutatType">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" />
+      <xsd:element name="menge" type="xsd:positiveInteger" />
+      <xsd:element name="einheit" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

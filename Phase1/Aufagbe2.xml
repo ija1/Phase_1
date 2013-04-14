@@ -1,10 +1,7 @@
-
-/** Mehrere Personen gleichzeitig**/
-
 <?xml version="1.0" encoding="UTF-8"?>
-
- <Gruppe> 
-          <Person id="0"> <!-- der Gruppenleiter hat id="0" -->
+<Gruppen>
+  <Gruppe id="G1"> 
+         <Gruppenleiter>         
                  <Vorname>Manfred</Vorname>
                  <Nachname>Konstanz</Nachname>
                  <Email>manfred@gmx.de</Email>
@@ -12,13 +9,14 @@
                  <Erfahrung>Profi</Erfahrung>
                  <Schlagzeug>vorhanden</Schlagzeug>
                  <Anmerkung>Mein Schlagzeug ist vorort</Anmerkung>
-          </Person>
-          <Person id="1">
+          </Gruppenleiter>
+          <Personen>
                  <Vorname>Lilli</Vorname>
                  <Nachname>Thiessen</Nachname>
                  <Email>l_this@web.de</Email>
                  <Geburtsdatum>1984-05-12</Geburtsdatum>
                  <Erfahrung>Fortgeschrittener</Erfahrung>
                  <Schlagzeug>nicht vorhanden</Schlagzeug>
-          </Person>
- </Gruppe>
+          </Personen>
+   </Gruppe>
+</Gruppen>

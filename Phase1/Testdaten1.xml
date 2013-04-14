@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rezepte xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Aufgabe3_C.xsd">
+  <rezept>
+    <rezeptname>Schupfnudel</rezeptname>
+    <zutaten>
+      <zutat>
+        <name>Schupfnudel</name>
+        <menge>1</menge>
+        <einheit>Pck</einheit>
+      </zutat>
+    </zutaten>
+    <zubereitung>
+      <arbeitszeit>
+        <stunde>0</stunde>
+        <minuten>10</minuten>
+      </arbeitszeit>
+      <schwierigkeitsgrad>normal</schwierigkeitsgrad>
+      <kalorien>150</kalorien>
+      <portion>2</portion>
+      <beschreibung>Schupfnudel mit Butter in eine Pfanne geben und braten
+      				bis dies goldbraun sind.
+      </beschreibung>
+    </zubereitung>
+    <kommentare>
+      <user>schneehase</user>
+      <datum>2012-02-13</datum>
+      <text>Ganz einfach und lecker</text>
+    </kommentare>
+  </rezept>
+  </rezepte>

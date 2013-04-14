@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rezepte xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Aufgabe3_C.xsd">
+  <rezept id="0">
+    <rezeptname>Gefüllte Paprika</rezeptname>
+    <zutaten>
+      <zutat>
+        <name>Parika</name>
+        <menge>3</menge>
+        <einheit>0</einheit>
+      </zutat>
+      <zutat>
+        <name>Hackfleisch</name>
+        <menge>300</menge>
+        <einheit>g</einheit>
+      </zutat>
+    </zutaten>
+    <zubereitung>
+      <arbeitszeit>
+        <stunde>1</stunde>
+        <minuten>10</minuten>
+      </arbeitszeit>
+      <schwierigkeitsgrad>normal</schwierigkeitsgrad>
+      <kalorien>540</kalorien>
+      <portion>6</portion>
+      <beschreibung>Hackfleisch würzen und die Parikas damit füllen</beschreibung>
+    </zubereitung>
+    <kommentare>
+      <user>sweetheart</user>
+      <datum>2013-07-09</datum>
+      <text>In Tomatensosse schmeckt es noch besser</text>
+    </kommentare>
+  </rezept>
+</rezepte>

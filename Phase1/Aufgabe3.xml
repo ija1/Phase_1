@@ -1,14 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<rezept id= "0">
-   	<rezeptname>Lenchen`Schokoladenkuchen</rezeptname>
-    <galerie>
-    		<bild id= "0">
-    		<bezeichnung>Bild:Chocokuchen</bezeichnung>
-    		<url>chocokuchen.jpg</url>
-    		</bild>		
-    </galerie>   
-    <zutaten>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>    
+<rezepte>    
+  <rezept id= "1">
+   	 <rezeptname>Lenchen`Schokoladenkuchen</rezeptname>
+	 <zutaten>
              <zutat>
              		<name>Butter</name>   
              		<menge>200</menge>
@@ -21,7 +15,6 @@
              </zutat>
              <zutat>      		
              		<name>Schokolade</name>
-             		<link idref="/rezept-zutateninfo-com.php?ID=1618"> Schokolade,Blockschokolade</link>             		
              		<menge>200</menge>
              		<einheit>g</einheit>
              </zutat>
@@ -32,7 +25,7 @@
              </zutat>
              <zutat>
              		<name>Backpulver</name>   
-             		<menge>1/2</menge>
+             		<menge>1</menge>
              		<einheit>TL</einheit>
              </zutat>
              <zutat>
@@ -41,17 +34,15 @@
              		<einheit>Pkt.</einheit>
              </zutat>
              <zutat>
-             		<name>Ei(er)</name>
-            	    <link idref="/rezept-zutateninfo-com.php?ID=36"> Ei(er)</link>   
+             		<name>Eier</name>
              		<menge>4</menge>
              		<einheit></einheit>
              </zutat>      
-             
     </zutaten>
     <zubereitung>
     		<arbeitszeit>
     				<stunde>1</stunde>
-    				<minuten></minuten>
+    				<minuten>10</minuten>
     		</arbeitszeit>
     		<schwierigkeitsgrad>normal</schwierigkeitsgrad>
     		<kalorien>295</kalorien>
@@ -66,16 +57,14 @@
     		</beschreibung>	
    </zubereitung>    
    <kommentare>
-   			<kommentar id = "0">
    			<user>swieselchen</user>
-   			<date>2002-07-02</date>
+   			<datum>2002-07-02</datum>
    			<text>
    			    Habe Deinen Kuchen gestern gebacken (kleine Abwandlung: 
    			    statt Blockschokolade hatte ich nur Kuvertüre, zartbitter und 
    			    ich habe noch etwas Rumaroma und eine Prise Salz dazugegeben) 
    			    mein LAG war total begeistert. Ich übrigends auch, super Rezept
    			</text>
-   			</kommentar>
    </kommentare>
-   
-</rezept>
+   </rezept>
+</rezepte>

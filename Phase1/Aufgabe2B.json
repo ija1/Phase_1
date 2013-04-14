@@ -1,0 +1,24 @@
+{
+ "Gruppe": 
+ {
+  "id": "G1",
+  "personen" : [
+  { 
+	 "Vorname"    : "Manfred" ,   
+	 "Nachname"   : "Konstanz",
+	 "Email"      : "manfred@gmx.de",
+	 "Geburtstag" : "31.01.1984 ",
+	 "Erfahrung"  : "Profi",
+	 "Schalgzeug" : "vorhanden",
+	 "Anmerkung"  : "Mein Schalgzeug ist vorort"
+   },{
+	 "Vorname"    : "Lilli" , 
+	 "Nachname"   : "Thiessen",
+	 "Email"      : "l_thiessen@gmx.de",
+	 "Geburtstag" : "12.05.1984",
+	 "Erfahrung"  : "Fortgeschrittener",
+	 "Schalgzeug" : "nicht vorhanden"
+
+   }]
+  }
+} 
