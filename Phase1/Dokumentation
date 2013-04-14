@@ -1,0 +1,141 @@
+Aufgabe 1:
+Namespace:
+• eindeutige Identifizierung über die URI
+• Namenskonflikte und Mehrdeutigkeit wird vermieden
+• Ansammlung von Attributen und Elementtypen
+• Deklariert durch xmlns: präfix = " URI ".
+
+Wohlgeformtheit:
+Eine Datei muss der Regel von XML entsprechen:
+• Am Beginn steht die XML-Deklaration die den Bezug zu XML herstellt.  
+• Das gesamte Dokument muss in ein einzelnes Wurzelelement eingeschlossen 
+  sein
+• Alle erforderlichen Attribute sind angegeben
+• Werte der Attribute befinden sich im richtigen Wertebereich und entsprechen
+  dem Typ
+• Elemente müssen korrekt ineinander verschachtelt werden
+• Alle Attributwerte in einfachen oder doppelten Anführungszeichen stehen.
+
+Validität:
+• XML-Dokument ist gültig, wenn es wohlgeformt ist
+• Validität ist Voraussetzung für maschinenlesbare Semantik
+• Prüft ob es den Richtlinien entspricht
+
+
+Aufgabe 2:
+a) Eine wichtige Entscheidung bei der Datenmodellierung ist es, zu entscheiden welche Informatio-nen in Attributen und welche in Elementen erfasst werden sollen. Bei diesem Formular eignet sich die Verwendung der Daten in Elementen abzuspeichern, weil Elemente hingegen geordnete Un-terelemente annehmen können und unter anderem bildet sich eine Sequenz ab. Exemplarisch sind hier zwei mögliche Personen aufgeführt, wobei der erste Eintrag immer der Gruppenleiter ist, danach folgen weitere Gruppenmitglieder.  
+Die Vergabe der id lässt eine Gruppierung zu, in der die vollständige Gruppe sich befindet. Damit kann es dokumentenweit nur einmal vorkommen und die einzelnen Teams sind eindeutig identifi-zierbar. Diesbezüglich können gleichnamige Elemente, bei denen auch Attribute den gleichen Inhalt haben, sich aber durch ein als ID definiertes Attribut unterscheiden müssen, mehrmals vorkommen. Ein Parser müsste einen Fehler ausgeben, wenn die Wertzuweisung bei dem Attribut “id„ im zweiten Datensatz die gleichen Werte hätten. 
+Eine alternativ zu Lösung könnte sein, das Geburtsdatum weiter aufzuschlüsseln in Tag, Monat und Jahr um Zugriff auf die einzelne Bestandteile zu gewährleisten. Zum anderen  könnte man die eindeutige Zuordnung der Gruppen über Attribute festlegen.
+
+
+b) Das Json-Dokument beinhaltet ein Objekt Gruppe mit einer id, in diesem wiederum befindet sich ein weiteres Objekt mit einem Array, das Informationen zum Gruppenleiter und seinen Gruppenmitglieder bzw. zwei Personen auflistet.  Der Zweck dieses hierarchischen Aufbaus ist es eine Gruppierung der gesamten Teams zu erzielen.  Jedes Mitglied bzw. Objekt kann über einen Index angesprochen werden, wie z.B. personen[0].Vorname.
+Darüber hinaus wäre eine schnelle Änderung der Datensätze gewährleistet, wie z.B. perso-nen[0].Vorname =“Tim“.
+Alternativ könnte man nur mit Objekten arbeiten und ggf. mit booleschen Werten.
+
+
+
+Aufgabe 3:
+a)  Auf den Hinblick, dass eine Erweiterbarkeit möglich ist, werden diesbezüglich die einzelnen In-formationen in eigene Elemente definiert. Jedes Rezept ist über seine eindeutige Id anzusprechen.
+Zutaten wurden aufgeteilt in Name, Einheit und Menge, dies ist nachher vom Vorteil, wenn dem User eine evtl. Auswahlmöglichkeit an z.B. Einheiten gewährleistet soll. Alle Informationen, die später textuell dargestellt werden sollen, sind auch als Elemente modelliert. Die Arbeitszeit ist in Stunden und Minuten aufgeteilt, da der Aufwand sich um Stunden oder Minuten oder nur Minuten  handeln kann. Der Kommentar erfasst nicht nur seinen Text, sondern unter anderem auch Daten des User bzw. Verfasser, diese sind ebenfalls in einzelne Elemente modelliert.
+Alternativ könnten Daten vom Verfasser einbezogen werden und die Handhabung mit den Kommentaren, könnten in einzelnen Schritten unterteilt werden. Des Weiteren könnten Informationen von Zutaten d.h. Name, Einheit und Menge in Attribute festgehalten werden.
+
+
+b)Die Gemeinsamkeiten der definierten Daten in meinem XML-Dokument im Kontext zu anderen Rezepten, ist  der Titel, der ein essentieller Bestandteil eines Rezeptes ist, jedoch mit dem Unter-schied, dass der Text sich ändert. Im Gegensatz zum Lenchen`s  Schokoladenkuchen haben einige Rezepte einen Untertitel, wie zum Beispiel, für ein Backblech, dies ist wahrscheinlich optional.  Zu-tatennamen, so wie auch Mengen sind für jedes Rezept obligatorisch, jedoch mit der Abweichung zu meinen Daten, das Zutaten und Mengen sich von Rezept zu Rezept ändern. Die Einheiten sind wahrscheinlich vordefiniert und über eine Auswahl verfügbar, im Gegensatz zu meinem XML-Dokument gibt es weitere Bezeichnungen für Einheiten wie zum Beispiel, Liter oder Handvoll.  Des Weiteren befindet sich eine Ungleichheit im Schwierigkeitsgrad, da ist es unter anderem möglich den Schwierigkeitsgrad simple zu selektieren. Homogen ist die Arbeitszeit, da es bereits in meinem XML-Dokument berücksichtigt ist, dass der Aufwand, jeweils in Stunden und Minuten oder nur Minuten oder nur in Stunden sein kann. Im Gegenteil von Lenchen`s Schokoladenkuchen und somit auch zu meinen Daten, kann der Brennwert ohne Eingabe stehen.  Außerdem ist es möglich Koch-/Backzeit und Ruhezeiten anzugeben, diese Eigenschaften habe ich nicht einbezogen, da es aus dem Schokoladenkuchen nicht hervorging.  Kommentare gegenüber meinen Daten s
+
+c) Kriterien XML Schema 
+Komplexer Typ(complex typ):
+kann Text, sowie untergeordnete Elemente und/oder Attribute enthalten. Standardmäßig haben komplexe Elemente einen komplexen Inhalt, das heißt, dass sie Kind-Elemente (sequence, all und choice) haben. Komplexe Typen können ohne Inhalt angeben werden, das bedeutet, sie sind leer, haben aber nur Attribute. Außerdem können Komplexe Typen gemischten Inhalt enthalten, ein Kombination aus Text und untergeordneten Elementen. Bezogen auf meine Daten, sind komplextypen:
+Zutaten, Zubereitung, Rezept, Arbeitzeit und Kommentare. Es befinden sich ein einziges Attribute im Dokument und zwar die id.
+
+Einfacher Typ (simple type):
+beschreibt unstrukturierten Inhalt ohne Elemente oder Attribute. Der Inhalt kann atomar (z.B. Strings, Integer) oder nicht-atomare(z.B. Listen) sein. Ein Datentyp kann auch Einschränkungen enthalten. Des Weiteren können Standard- und Festwerte definiert werden. Wenn es der Fall trifft, dass ein Element ein Attribut hat, wird es als eines komplexen Typs sein, aber das Attribut selbst ist immer vom einfachen Typ. Bezügliche meiner Datensätze sind simple type z.B.: Rezeptname, Name der Zutat, Menge und Einheit.
+
+
+Restriktion:
+Ein neuer Elementtyp kann erzeugt werden, indem es bereits vorhandenen Elementtyp beschränkt. Dafür müssen alle Elemente aufgezählt werden und es können beliebige Beschränkungen verteilt werden.
+Liste der mögliche Einschränkungen:
+•  length, maxLength, minLength = Länge eines Strings 
+•  enumeration = Auswahl 
+•  pattern = Reguläre Ausdrücke 
+•  minExclusiv, maxExclusiv, minInclusiv, 
+   maxInclusiv = Wertebereicheinschränkung 
+•  totalDigits, fractionDigits = Einschränkung der Dezimalstelle 
+   (Gesamtzahl, Nachkommastelle) 
+•  whiteSpace = Behandlung von Tabs und Leerzeichen
+•  etc…
+Hinsichtlich meiner Daten, können z.B. folgende Typen Einschränkungen beinhalten:
+Zutat: name        -> restrictrion: string
+           Menge     -> restriction: int
+           Einheiten -> restriction: string
+unter anderen könnte eine Einschränkung zum Beispiel in der Auswahl der Einheiten bestehen.
+  
+
+Aufgabe 5:
+Es ist sinnvoll die Daten in XML abzuspeichern, da es eine internationale Standardisierung ist und damit können alle Kommunikationspartner auf den gleichen Entwicklungsstand beziehen. Außerdem ist XML die Grundlage von webbasierten Anwendungen zum Anzeigen und Bearbeiten von Daten, außerdem dient es dazu, Daten sinnvoll zu strukturieren und vollständig zu beschreiben. Damit diese zwischen Systemen ausgetauscht werden können, wenn die Regeln eingehalten wurden. Die Nutzung von XML in Anwendungen ist sinnvoll bzw. naheliegend, da somit der Umwandlungsprozess hinfällig wird.
+
+XML:
+Vorteile
+• Die Daten liegen in einer einheitlichen Struktur vor.
+
+• Die Datenhaltung erfolgt getrennt von Darstellung und Verarbeitung. 
+
+• XML ist ein verbreiteter Standard; XML ist lizenz-frei und
+  plattformunabhängig. Dies erleichtert den Datenaustausch. 
+• Daten im XML-Format sind leicht transportierbar, da sie als Textdatei
+  gespeichert werden. 
+
+• XML-Dateien sind sowohl von Menschen als auch Maschinen-lesbar.  
+  XML-Dokumente können selbstbeschreibend sein. Zudem erleichtert die
+  strenge Syntax die (maschinelle) Analyse und Ver-arbeitung 
+
+• XML ist leicht erweiterbar (zusätzliche Änderun-gen beeinflussen die
+  vorhandene Funktionalität nicht).Verfügbarkeit von Standard-Tools und
+  Hilfsmittel: XML wird von vielen Software Herstellern unterstützt. 
+
+• Formale Prüfung des XML-Dokumentes erfolgt nicht in der Anwendung,  
+  sondern wird mit Hilfe eines XML-Schemas (XSD-Datei) du durchgeführt. 
+  Bei Änderungen muss lediglich das Schema angepasst werden. Tags können 
+  lesbar gestaltet werden. Dies ist von Vorteil, wenn manuelle 
+  Nachbearbeitungen von Nachrichten erfolgen müssen
+
+Nachteile
+•  Auswirkung  auf die Datenmenge und Speicherkapazität
+
+•  Schlechte Performance bei Datenhaltung
+
+•  Beschränkte Datentypisierung: fast nur Strings, keine Zahlen, 
+   Tabellen, Matrizen…
+
+•  Kein Mechanismus zur Beschreibung von Bezie-hungen zwischen Elementen
+
+
+
+JSON:
+
+Vorteile	
+• JSON ermöglicht es auf dem Server Datenstruktu-ren wie z.B. einen Array in  
+  das JSON Format zu serialisieren. 
+
+• Im Client JavaScript kann diese serialisierte Struktur wieder zusammengebaut
+  (deserialisiert) werden und genutzt werden.
+
+• Textformat, komplett unabhängig von Program-miersprachen in Verbindung mit 
+  JavaScript dynamischen Inhalte erzielen kann
+
+• Schlanker, schneller und einfacher zu analysieren	
+
+Nachteile
+• Nicht erweiterbar
+
+• Unterstützt keine Namensräume und keine schemabasierte Validierung
+
+
+
+
+
+
+
+
+
+
+
